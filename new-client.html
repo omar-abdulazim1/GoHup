@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Client | GoHup </title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Main Container -->
+    <div class="container">
+      
+      <!-- Header Section -->
+      <header class="page-header">
+        <div class="logo-area">
+          <img src="assits/Logo.png" alt="GoHup Logo" class="logo" />
+          <h1>GoHup</h1>
+        </div>
+        <button class="back-btn" type="button" onclick="location.href='index.html'"> 🏠 Home </button>
+      </header>
+
+      <!-- Page Title -->
+      <section class="page-intro">
+        <h2>🧍‍♂️ Add a New Client</h2>
+        <p>Welcome to the GoHup client manager! 🗂️  
+        Please fill in the information below to add a new client to your system.</p>
+      </section>
+
+      <!-- Client Form -->
+      <form class="client-form" action="#" method="post">
+        
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>👤 Personal Information</legend>
+          
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter client's full name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@email.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+20 10 1234 5678"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select gender</option>
+              <option value="male">Male ♂️</option>
+              <option value="female">Female ♀️</option>
+                          </select>
+          </div>
+
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              min="10"
+              max="100"
+              placeholder="Enter age"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <!-- Fitness Information -->
+        <fieldset>
+          <legend>💪 Fitness Information</legend>
+          
+          <div class="form-group">
+            <label for="goal">Goal</label>
+            <select id="goal" name="goal" required>
+              <option value="">Select goal</option>
+              <option value="weight-loss">🏃 Weight Loss</option>
+              <option value="muscle-gain">🏋️ Muscle Gain</option>
+              <option value="general-fitness">⚡ General Fitness</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="experience">Training Experience</label>
+            <select id="experience" name="experience">
+              <option value="">Select level</option>
+              <option value="beginner">🌱 Beginner</option>
+              <option value="intermediate">🔥 Intermediate</option>
+              <option value="advanced">🚀 Advanced</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="startDate">Membership Start Date</label>
+            <input
+              type="date"
+              id="startDate"
+              name="startDate"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="notes"> 📝 Additional Notes</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Enter any specific notes or preferences"
+            ></textarea>
+          </div>
+        </fieldset>
+
+        <!-- Action Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="View-Client">✅ Add Client</button>
+          <button type="reset" class="new-client">🧹 Clear Form</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

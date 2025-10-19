@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoHup - Client List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="page-header">
+      <div class="logo-area">
+        <img src="assits/Logo.png" alt="GoHup Logo" class="logo" />
+        <h1>GoHup</h1>
+      </div>
+      <div class="header-actions">
+        <button class="Home" onclick="location.href='index.html'">🏠 Home</button>
+        <button class="New-Client" onclick="location.href='new-client.html'">➕ Add New Client</button>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="table-section">
+      <h2>👥 Client List</h2>
+
+      <!-- Search -->
+      <div class="search-box">
+        <label for="search">🔎 Search Clients:</label>
+        <input type="text" id="search" placeholder="Type client name..." />
+      </div>
+
+      <!-- Table -->
+      <table class="client-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Goal</th>
+            <th>Start Date</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ahmed Ali</td>
+            <td>Male</td>
+            <td>28</td>
+            <td>01012345678</td>
+            <td>ahmed@example.com</td>
+            <td>Muscle Gain</td>
+            <td>2025-10-01</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Sarah Mohamed</td>
+            <td>Female</td>
+            <td>25</td>
+            <td>01122334455</td>
+            <td>sarah@example.com</td>
+            <td>General Fitness</td>
+            <td>2025-09-20</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Omar Khaled</td>
+            <td>Male</td>
+            <td>30</td>
+            <td>01055667788</td>
+            <td>omar@example.com</td>
+            <td>Weight Loss</td>
+            <td>2025-08-15</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Mohamed Tarek</td>
+            <td>Male</td>
+            <td>26</td>
+            <td>01233445566</td>
+            <td>mohamedt@example.com</td>
+            <td>Strength Training</td>
+            <td>2025-07-10</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Layla Hassan</td>
+            <td>Female</td>
+            <td>22</td>
+            <td>01099887766</td>
+            <td>layla@example.com</td>
+            <td>Endurance</td>
+            <td>2025-06-05</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Khaled Nasser</td>
+            <td>Male</td>
+            <td>32</td>
+            <td>01255667788</td>
+            <td>khaledn@example.com</td>
+            <td>Fat Loss</td>
+            <td>2025-05-18</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Mona Adel</td>
+            <td>Female</td>
+            <td>29</td>
+            <td>01066778899</td>
+            <td>mona@example.com</td>
+            <td>Muscle Toning</td>
+            <td>2025-04-25</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Ali Hassan</td>
+            <td>Male</td>
+            <td>27</td>
+            <td>01177889900</td>
+            <td>alih@example.com</td>
+            <td>Bodybuilding</td>
+            <td>2025-03-12</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Rana Fathi</td>
+            <td>Female</td>
+            <td>24</td>
+            <td>01044332211</td>
+            <td>rana@example.com</td>
+            <td>Cardio Improvement</td>
+            <td>2025-02-28</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Mostafa Gamal</td>
+            <td>Male</td>
+            <td>35</td>
+            <td>01233446677</td>
+            <td>mostafa@example.com</td>
+            <td>CrossFit</td>
+            <td>2025-01-10</td>
+            <td>
+              <select class="action-select" onchange="handleAction(this)">
+                <option value="">⚙️ Action</option>
+                <option value="edit">✏️ Edit</option>
+                <option value="delete">🗑️ Delete</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  </body>
+</html>
